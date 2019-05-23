@@ -1,0 +1,8 @@
+<h1>See all the available Ingredients</h1>
+<ul>
+  <% @ingredients.each do |ingredient| %>
+  <li><%= ingredient.name %></li>
+  <% end %>
+</ul>
+
+<%= link_to "See here all cocktails", cocktails_path %>
