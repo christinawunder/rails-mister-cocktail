@@ -12,9 +12,19 @@
   </head>
 
   <body>
-    <h1>WunderBar - best cocktails in town</h1>
-    <%= yield %>
-    <% javascript_include_tag "application" %>
-    <% javascript_pack_tag "application" %>
+    <div class="home-banner">
+      <h1>WunderBar</h1>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <h2>WunderBar - best cocktails in town</h2>
+          <%= yield %>
+          <% javascript_include_tag "application" %>
+          <% javascript_pack_tag "application" %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
