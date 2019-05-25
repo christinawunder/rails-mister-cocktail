@@ -1,7 +1,9 @@
+<%= cl_image_tag "b2kidoxiipwn2esizhsv", alt: "drink", height: 600, width: 800, crop: :fill %>
 <h1>See all our cocktails</h1>
 <ul>
   <% @cocktails.each do |cocktail| %>
-  <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+  <li><%= link_to cocktail.name, cocktail_path(cocktail) %>
+  </li>
   <% end %>
 </ul>
 <%= link_to "Add a new cocktail", new_cocktail_path %>
